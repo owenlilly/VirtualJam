@@ -1,2 +1,2 @@
-Welcome to VirtualJA...
-Let's write some code!!!
+<h1>VirtualJA</h1>
+<p>An open source crowd platform for Jamaica</p>
