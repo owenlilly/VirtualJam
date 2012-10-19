@@ -1,0 +1,3 @@
+VirtualJA is licensed unders th Apache License v2 (ALv2) to Owen Lilly.
+
+Copyright VritualJA 2012, all rights reserved.
