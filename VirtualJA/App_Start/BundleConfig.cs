@@ -16,7 +16,7 @@ namespace VirtualJA
                         "~/Scripts/bootstrap/css/bootstrap.css",
                         "~/Scripts/bootstrap/css/bootstrap-responsive.css"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/bootstrap/js/bootstrap.js").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/bootstrap/js/bootstrap").Include(
                         "~/Scripts/bootstrap/js/bootstrap.js"));
 
             // Custom styles & scripts
