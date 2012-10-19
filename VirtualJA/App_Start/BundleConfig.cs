@@ -20,7 +20,7 @@ namespace VirtualJA
                         "~/Scripts/bootstrap/js/bootstrap.js"));
 
             // Custom styles & scripts
-            bundles.Add(new StyleBundle("~/css").Include(
+            bundles.Add(new StyleBundle("~/css/style").Include(
                         "~/css/style.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/scripts").Include(

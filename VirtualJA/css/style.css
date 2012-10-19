@@ -261,16 +261,3 @@ body {
 .text-smaller {
     font-size: smaller;
 }
-
-
-#taskPreview
-{
-    background-color: #fdfdfd;
-    padding: 10px;
-}
-
-#testPreview
-{
-    background-color: #fbfbfb;
-    padding: 10px;
-}
