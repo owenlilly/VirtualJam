@@ -107,7 +107,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VirtualJA\VirtualJam.csproj">
+    <ProjectReference Include="..\VirtualJam\VirtualJam.csproj">
       <Project>{EE42B0A3-6C54-409E-B47B-6170AA34B631}</Project>
       <Name>VirtualJam</Name>
     </ProjectReference>
