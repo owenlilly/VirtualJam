@@ -22,7 +22,7 @@
             <div class="container-fluid">
                 <div class="row-fluid">
                     <div class="span7">
-                        <h1>@Html.ActionLink("VirtualJam", "index", "home")</h1>
+                        <h1><a href="/">VirtualJam</a></h1>
                     </div>
                     <div class="span5">
                         <span class="pull-right authorize">
@@ -36,9 +36,9 @@
         <nav id="nav">
             <div class="container-fluid">
                 <ul>
-                    <li>@Html.ActionLink("Home", "index", "home")</li>
-                    <li>@Html.ActionLink("About", "about", "home")</li>
-                    <li>@Html.ActionLink("Contact", "contact", "home")</li>
+                    <li><a href="/" class="@ViewBag.home">Home</a></li>
+                    <li><a href="/home/about" class="@ViewBag.about">About</a></li>
+                    <li><a href="/home/contact" class="@ViewBag.contact">Contact</a></li>
                 </ul>
             </div>
         </nav><!--End Nav-->
@@ -51,9 +51,25 @@
 
         <footer id="footer">
             <div class="container-fluid">
-                Copyright &copy; @DateTime.Now.Year VirtualJam
+                <div class="row-fluid">
+                    <span class="span4">
+                        <h4><a href="/" class="sitename">VirtualJam 2012</a></h4>
+                    </span>
+                    <span class="span4">
+                        @*Content Placesholder*@
+                    </span>
+                    <span class="span4">
+                        @*Content Placesholder*@
+                    </span>
+                </div>
             </div>
         </footer><!--End Footer-->
+        
+        <div class="copyright">
+            <div class="container-fluid">
+                Copyright &copy; @DateTime.Now.Year VirtualJam
+            </div>
+        </div>
 
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/Scripts/bootstrap/js/bootstrap")
