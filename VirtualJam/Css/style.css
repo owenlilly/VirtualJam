@@ -4,6 +4,10 @@ body {
     color: #efefef;
 }
 
+a {
+    color: darkred;
+}
+
 
 /* General Header & Nav
 ------------------------------------------*/
