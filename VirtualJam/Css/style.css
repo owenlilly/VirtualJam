@@ -1,24 +1,20 @@
 ﻿
 body {
-    background-color: #171717;
-    color: #efefef;
-}
-
-a {
-    color: darkred;
+    background-color: #2f2f2f;
 }
 
 
 /* General Header & Nav
 ------------------------------------------*/
 
-#header, #nav {
-    
+#header, #nav, #footer {
+        background-color: #272727;
 }
 
 #header a, 
 #nav a {
     text-decoration: none;
+    color: #efefef;
 }
 
 #header ul, 
@@ -40,6 +36,18 @@ a {
     
 }
 
+#header h1 {
+    font: 400 40px/1.2 'Sansita one', Georgia, serif;
+}
+
+#header a {
+    color: #cfcfcf;
+}
+
+#header a:hover {
+    color: #ffffff;
+}
+
 #header .authorize {
     padding: 15px 0 0;
 }
@@ -51,25 +59,31 @@ a {
 /* Nav
 ------------------------------------------*/
 #nav {
-    
+    border-top: 1px solid #3f3f3f;
+    border-bottom: 1px solid #141414;
 }
 
 #nav li a {
-    padding: 5px 10px;
+    padding: 8px 10px;
     display: block;
+    font-family: 'Arial';
+    font-size: 16px;
 }
 
 #nav li a:hover {
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 5px;
-    color: #efefef;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #efefef;
 }
 
 
 /* Main
 ------------------------------------------*/
 #main {
-    
+    background-color: #ffffff;
+}
+
+#main > .container-fluid {
+    padding: 15px 0 50px;
 }
 
 /* Footer
@@ -77,6 +91,14 @@ a {
 #footer {
     font-size: smaller;
     text-align: center;
+    height: 80px;
+    background-color: #2f2f2f;
+    border-top: 1px solid #141414;
+}
+
+#footer > .container-fluid {
+    padding-top: 15px;
+    color: lightgray;
 }
 
 
