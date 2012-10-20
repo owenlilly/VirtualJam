@@ -1,4 +1,4 @@
-# VirtualJA
+# VirtualJam
 An open source crowd platform for Jamaica.
 
 <br>
