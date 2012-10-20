@@ -10,6 +10,8 @@
 
         @Scripts.Render("~/bundles/modernizr")
         @Styles.Render("~/Scripts/bootstrap/css/bootstrap")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/Scripts/bootstrap/js/bootstrap")
         @Styles.Render("~/css/style")
         
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -36,9 +38,9 @@
         <nav id="nav">
             <div class="container-fluid">
                 <ul>
-                    <li><a href="/" class="@ViewBag.home">Home</a></li>
-                    <li><a href="/home/about" class="@ViewBag.about">About</a></li>
-                    <li><a href="/home/contact" class="@ViewBag.contact">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/home/about">About</a></li>
+                    <li><a href="/home/contact">Contact</a></li>
                 </ul>
             </div>
         </nav><!--End Nav-->
@@ -71,8 +73,6 @@
             </div>
         </div>
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/Scripts/bootstrap/js/bootstrap")
         @Scripts.Render("~/bundles/scripts")
     </body>
 </html>
