@@ -3,7 +3,6 @@ using System.Web.Mvc;
 
 namespace VirtualJam.Models
 {
-
     public class ChangePasswordModel
     {
         [Required]
