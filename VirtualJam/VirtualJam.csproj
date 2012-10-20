@@ -128,7 +128,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Context\DataContext.cs" />
+    <Compile Include="Entities\Core.cs" />
     <Compile Include="Entities\ICore.cs" />
+    <Compile Include="Entities\Task.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
