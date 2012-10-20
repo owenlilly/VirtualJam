@@ -36,6 +36,14 @@ body {
     
 }
 
+#header .authorize {
+    padding: 15px 0 0;
+}
+
+#header .authorize li a {
+    padding: 5px;
+}
+
 /* Nav
 ------------------------------------------*/
 #nav {
