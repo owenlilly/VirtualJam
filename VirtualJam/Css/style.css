@@ -15,15 +15,15 @@
     color: #efefef;
 }
 
-#header ul, 
-#nav ul {
+#header ul.main, 
+#nav ul.main {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-#header li, 
-#nav li {
+#header ul.main > li, 
+#nav ul.main > li {
     float: left;
 }
 
@@ -32,6 +32,7 @@
 ------------------------------------------*/
 #header {
     border-bottom: 1px solid #000;
+    color: #ffffff;
 }
 
 #header h1 {
