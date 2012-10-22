@@ -9,13 +9,13 @@ using VirtualJam.Context;
 
 namespace CodeFirstMembershipSharp
 {
-    public class DataContextInitializer : DropCreateDatabaseAlways<DataContext>
+    public class DataContextInitializer : DropCreateDatabaseIfModelChanges<DataContext>
     {
-        protected override void Seed(DataContext context)
-        {
-            WebSecurity.Register("Demo", "123456", "demo@demo.com", true, "Demo", "Demo");
-            Roles.CreateRole("Admin");
-            Roles.AddUserToRole("Demo", "Admin");
-        }
+        //protected override void Seed(DataContext context)
+        //{
+        //    WebSecurity.Register("Demo", "123456", "demo@demo.com", true, "Demo", "Demo");
+        //    Roles.CreateRole("Admin");
+        //    Roles.AddUserToRole("Demo", "Admin");
+        //}
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using System.Web.Security;
 using VirtualJam.Models;
+using CodeFirstMembershipSharp;
 
 namespace VirtualJam.Controllers
 {
@@ -31,9 +32,10 @@ namespace VirtualJam.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (Membership.ValidateUser(model.UserName, model.Password))
+                //if (Membership.ValidateUser(model.UserName, model.Password))
+                if(WebSecurity.Login(model.UserName, model.Password, model.RememberMe))
                 {
-                    FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
+                    //FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
                     if (Url.IsLocalUrl(returnUrl))
                     {
                         return Redirect(returnUrl);
