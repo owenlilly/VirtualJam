@@ -10,7 +10,7 @@
         Passwords must be at least @Membership.MinRequiredPasswordLength characters long.
     </p>
     
-    @using (Html.BeginForm((string)ViewBag.FormAction, "account", FormMethod.Post, new {@class="form-horizontal"}))
+    @using (Html.BeginForm((string)ViewBag.FormAction, "account", FormMethod.Post, new { @class="form-horizontal" }))
     {
         @Html.ValidationSummary(true, "Account creation was unsuccessful. Please correct the errors and try again.")
 
@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="control-group">
-                    @Html.LabelFor(m => m.ConfirmPassword, new {@class="control-label margin10-right"})
+                    @Html.LabelFor(m => m.ConfirmPassword, new { @class="control-label margin10-right" })
                     <div class="controls no-margin">
                         @Html.PasswordFor(m => m.ConfirmPassword)
                         @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-error" })
