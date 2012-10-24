@@ -4,66 +4,101 @@
 $(document).ready(function () {
     // alert('jQuery is loaded and ready!');
 
+    $('a').on('click', function (e) {
 
-    $('#go-get').click(function (e) {
-        e.preventDefault();
+        var $ele = $(this);
 
-        var data = $.trim($('#txtGet').val());
-        if (data == '') {
-            alert('no data!');
-            return;
+        if ($ele.attr('id') == 'setting-edit') {
+
+            e.preventDefault();
+
+            var $this = $ele.closest('.setting');
+            var $content = $this.find('.setting-content');
+
+            var isVisible = (($content.css('display') == 'none') ? false : true);
+
+            if (!isVisible) {
+                $this.find('ul').css({
+                    'backgroundColor': 'rgba(0,0,0,.05)',
+                    'border-left': '1px solid lightgray',
+                    'border-right': '1px solid lightgray',
+                    'border-top': '1px solid lightgray'
+                });
+
+                $content.slideDown('fast');
+
+                $this.find('#setting-edit').text('Cancel');
+            } else {
+                $content.slideUp('fast');
+                $this.find('ul').removeAttr('style');
+                $this.find('#setting-edit').text('Edit');
+            }
         }
+    });
 
-        var dfd = $.get('/maps/httpget', {
-            data: data
-        });
+}); // $(document).ready()
 
-        var $result = $('#result');
 
-        $result.text('Loading...');
+/** jQuery Ajax Test
+ *
+$('#go-get').click(function (e) {
+    e.preventDefault();
 
-        dfd.done(function (result) {
-            var response = 'Get Success!: ' + JSON.stringify(result);
-            $result.html(response);
-            console.log(response);
-        });
+    var data = $.trim($('#txtGet').val());
+    if (data == '') {
+        alert('no data!');
+        return;
+    }
 
-        dfd.fail(function (xhr) {
-            var response = 'Get Failed: ' + JSON.stringify(xhr);
-            $result.html(response);
-            console.log(response);
-        });
-    }); // Get request
+    var dfd = $.get('/maps/httpget', {
+        data: data
+    });
 
-    $('#go-post').click(function (e) {
-        e.preventDefault();
+    var $result = $('#result');
 
-        var data = $.trim($('#txtPost').val());
-        if (data == '') {
-            alert('no data!');
-            return;
-        }
+    $result.text('Loading...');
 
-        var $result = $('#result');
+    dfd.done(function (result) {
+        var response = 'Get Success!: ' + JSON.stringify(result);
+        $result.html(response);
+        console.log(response);
+    });
 
-        $result.text('Loading...');
+    dfd.fail(function (xhr) {
+        var response = 'Get Failed: ' + JSON.stringify(xhr);
+        $result.html(response);
+        console.log(response);
+    });
+}); // Get request
 
-        var dfd = $.post('/maps', {
-            Content: data
-        });
+$('#go-post').click(function (e) {
+    e.preventDefault();
 
-        dfd.done(function (result) {
-            var response = 'Post Success!: ' + JSON.stringify(result);
-            $result.html(response);
-            console.log(response);
-        });
+    var data = $.trim($('#txtPost').val());
+    if (data == '') {
+        alert('no data!');
+        return;
+    }
 
-        dfd.fail(function (xhr) {
-            var response = 'Post failed: ' + JSON.stringify(xhr);
-            $result.html(response);
-            console.log(response);
-        });
+    var $result = $('#result');
 
-    }); // Post request
+    $result.text('Loading...');
 
-});     // $(document).ready()
+    var dfd = $.post('/maps', {
+        Content: data
+    });
+
+    dfd.done(function (result) {
+        var response = 'Post Success!: ' + JSON.stringify(result);
+        $result.html(response);
+        console.log(response);
+    });
+
+    dfd.fail(function (xhr) {
+        var response = 'Post failed: ' + JSON.stringify(xhr);
+        $result.html(response);
+        console.log(response);
+    });
+
+}); // Post request
+*/

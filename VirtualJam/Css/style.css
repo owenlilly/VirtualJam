@@ -48,6 +48,20 @@
     color: #ffffff;
 }
 
+#header .dropdown-menu {
+    min-width: 100px;
+    font-size: smaller;
+    border-radius: 0 0 6px 6px;
+}
+
+#header .dropdown-menu a {
+    color: #141414;
+}
+
+#header .dropdown-menu a:hover {
+    color: #ffffff;
+}
+
 #header .authorize {
     padding: 10px 0 0;
     font-family: 'Times New Roman';
@@ -55,6 +69,11 @@
 
 #header .authorize li a {
     padding: 5px;
+}
+
+#header .authorize li a:hover {
+    background-color: #000000;
+    border-radius: 3px;
 }
 
 /* Nav
@@ -98,6 +117,49 @@
     height: 500px;
     border: 1px solid #141414;
 }
+
+#main #content .settings {
+    
+}
+
+#main #content .settings .setting {
+    
+}
+
+#main #content .settings .setting ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#main #content .settings .setting ul:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+#main #content .settings .setting li {
+    float: left;
+    text-align: left;
+    padding: 8px 0;
+}
+
+#main #content .settings .setting div.setting-content {
+    display: none;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 10px;
+    margin: -6px 0 15px;
+    background-color: #fcfcfc;
+    border-radius: 3px;
+}
+
+.show {
+    display: block;
+}
+
+
 
 /* Footer
 ------------------------------------------*/

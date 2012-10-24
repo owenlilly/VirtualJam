@@ -14,6 +14,20 @@ namespace VirtualJam.Controllers
     {
 
         //
+        // 
+        [Authorize]
+        public ActionResult Profile()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public ActionResult AccountSettings()
+        {
+            return View();
+        }
+
+        //
         // GET: /Account/Login
 
         [AllowAnonymous]

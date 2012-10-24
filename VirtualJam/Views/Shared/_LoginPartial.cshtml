@@ -1,11 +1,14 @@
 ﻿@if (Request.IsAuthenticated) {
     <ul class="main">
+        <li>
+            Hi, <a href="/account/profile">@User.Identity.Name</a>| 
+        </li>
         <li class="dropdown">
-            Hello <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      @User.Identity.Name
-                      <b class="caret" style="border-top: 4px solid white"></b>
-                  </a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                 <b class="caret" style="border-top: 4px solid white"></b>
+            </a>
             <ul class="dropdown-menu">
+                <li><a href="/account/accountsettings">Account Settings</a></li>
                 <li>@Html.ActionLink("Log off", "logoff", "account")</li>
             </ul>
         </li>
