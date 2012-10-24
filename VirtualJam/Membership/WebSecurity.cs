@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Routing;
 using System.Web.Security;
 using VirtualJam.Context;
-using VirtualJam.Models;
+using VirtualJam.Core;
 
 
 namespace CodeFirstMembershipSharp

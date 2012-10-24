@@ -7,6 +7,7 @@ using System.Data.Entity;
 using System.Web.Security;
 using VirtualJam.Models;
 using VirtualJam.Context;
+using VirtualJam.Core;
 
 namespace CodeFirstMembershipSharp
 {

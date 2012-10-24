@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace VirtualJam.Models
+namespace VirtualJam.Core
 {
     /// <summary>
     /// Each entity must implement this interface.
