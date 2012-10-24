@@ -15,9 +15,9 @@ Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apa
 Contributing to this project is very important as it aims to promote development and by extension, the quality of life in Jamaica.
 You can contribute by:
 
-* joining the development team
+* writing code
 * bug fixing
 * bug reporting
 * sharing your ideas
 
-Make this your contribution to vision 2030.
+Make this your contribution to Vision 2030.
